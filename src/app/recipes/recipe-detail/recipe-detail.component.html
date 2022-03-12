@@ -15,20 +15,25 @@
         Manage Recipie
       </button>
       <ul class="dropdown-menu" aria-labelledby="manage-recipie-btn">
-        <li><a class="dropdown-item" href="#">To Shopping List</a></li>
-        <li><a class="dropdown-item" href="#">Edit Recipie</a></li>
-        <li><a class="dropdown-item" href="#">Delete Recipie</a></li>
+        <li><a class="dropdown-item" style="cursor: pointer;" (click)="onAddToShoppingList()">To Shopping List</a></li>
+        <li><a class="dropdown-item" style="cursor: pointer;" (click)="onRecipeEdit()">Edit Recipie</a></li>
+        <li><a class="dropdown-item" style="cursor: pointer;">Delete Recipie</a></li>
       </ul>
     </div>
   </div>
 </div>
-<div class="row">
+<div class="row my-4">
   <div class="col-12 text-capitalize">
     {{ selectedRecipe.description }}
   </div>
 </div>
 <div class="row">
   <div class="col-12">
-    ingredients
+    <ul class="list-group">
+      <li style="cursor: pointer;" class="list-group-item list-group-item-action" aria-current="true" *ngFor="let ingredient of selectedRecipe.ingredients">
+
+        {{ ingredient.name }} - ({{ ingredient.amount }})
+      </li>
+    </ul>
   </div>
 </div>

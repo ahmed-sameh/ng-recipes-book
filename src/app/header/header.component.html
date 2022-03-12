@@ -1,25 +1,25 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ng-Recipes</a>
+    <a class="navbar-brand">Ng-Recipes</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" appDropdown>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="px-3 nav-item">
-          <a class="nav-link active" aria-current="page" href="#" (click)="onSelect('recipe')">Recipes</a>
+          <a class="nav-link" aria-current="page" routerLink="/recipes" routerLinkActive="active">Recipes</a>
         </li>
         <li class="px-3 nav-item">
-          <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+          <a class="nav-link" routerLink="/shoppingList" routerLinkActive="active">Shopping List</a>
         </li>
 
         <li class="nav-item dropdown" >
-          <a class="px-3 nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" appDropdown>
+          <a class="px-3 nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" appDropdown>
             Manage
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Fetch Data</a></li>
-            <li><a class="dropdown-item" href="#">Save Data</a></li>
+            <li><a class="dropdown-item" >Fetch Data</a></li>
+            <li><a class="dropdown-item" >Save Data</a></li>
           </ul>
         </li>
       </ul>
