@@ -12,12 +12,14 @@ import { RecipeService } from '../recipe.service';
 export class RecipeDetailComponent implements OnInit {
   // @Input('Recipe') selectedRecipe!: Recipe;
   selectedRecipe!: Recipe;
+  recipeId!: number;
+
   constructor(private shoppingListService: ShoppingListService, private recipeService: RecipeService,private currentRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.currentRoute.params.subscribe( (updatedParams: Params) => {
-      let id = updatedParams['id'];
-      this.selectedRecipe = this.recipeService.getRecipe(+id)
+      this.recipeId = updatedParams['id'];
+      this.selectedRecipe = this.recipeService.getRecipe(+this.recipeId)
     })
 
   }
@@ -28,5 +30,10 @@ export class RecipeDetailComponent implements OnInit {
 
   onRecipeEdit() {
     this.router.navigate(['edit'], {relativeTo: this.currentRoute})
+  }
+
+  onDeleteRecipe() {
+    this.recipeService.deleteRecipe(+this.recipeId);
+    this.router.navigate(['/recipes'])
   }
 }
