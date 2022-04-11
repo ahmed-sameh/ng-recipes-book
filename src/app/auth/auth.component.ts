@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Type, ViewContainerRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -19,9 +19,7 @@ export class AuthComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   onSwitchMood() {
     this.isLoginMood = !this.isLoginMood
@@ -56,6 +54,11 @@ export class AuthComponent implements OnInit {
     
     
     authForm.reset()
+  }
+
+
+  onHandleError() {
+    this.error = null;
   }
 
 
