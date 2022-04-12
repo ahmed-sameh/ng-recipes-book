@@ -6,7 +6,7 @@
     <div class="list-group">
       <a class="list-group-item list-group-item-action" aria-current="true" *ngFor="let ingredient of ingredients; let i= index" (click)="onEditItem(i)">
 
-        {{ ingredient.name }} - ({{ ingredient.amount }})
+        {{ ingredient.ingName }} - ({{ ingredient.ingAmount }})
       </a>
     </div>
   </div>

@@ -22,8 +22,8 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
       this.ingredientId = ingredientIndex;
       const ingredient = this.shoppingService.getSingleIngredient(this.ingredientId);
       this.editFormRef.form.patchValue({
-        'ingName': ingredient.name,
-        'ingAmount': ingredient.amount
+        'ingName': ingredient.ingName,
+        'ingAmount': ingredient.ingAmount
       })
     })
   }

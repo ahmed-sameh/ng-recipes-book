@@ -40,8 +40,8 @@ export class RecipeEditComponent implements OnInit {
       if(recipe['ingredients']) {
         recipe.ingredients.forEach( ing => {
           recipeIngredients.push(new FormGroup({
-            'ingName': new FormControl(ing.name, Validators.required),
-            'ingAmount': new FormControl(ing.amount, [Validators.required, Validators.min(1)])
+            'ingName': new FormControl(ing.ingName, Validators.required),
+            'ingAmount': new FormControl(ing.ingAmount, [Validators.required, Validators.min(1)])
           }))
         })
       }
