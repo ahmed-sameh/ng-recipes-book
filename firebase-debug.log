@@ -1,0 +1,22 @@
+[debug] [2022-04-12T15:27:01.839Z] ----------------------------------------------------------------------
+[debug] [2022-04-12T15:27:01.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ahmed Sameh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-12T15:27:01.842Z] CLI Version:   10.6.0
+[debug] [2022-04-12T15:27:01.842Z] Platform:      win32
+[debug] [2022-04-12T15:27:01.842Z] Node Version:  v17.5.0
+[debug] [2022-04-12T15:27:01.843Z] Time:          Tue Apr 12 2022 17:27:01 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-04-12T15:27:01.843Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-12T15:27:01.846Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-04-12T15:27:01.947Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-12T15:27:01.947Z] > authorizing via signed-in user (medo5love55@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\courses\Web Development\Advanced Courses\Angular\0. Course Projects\ng-recipe
+
